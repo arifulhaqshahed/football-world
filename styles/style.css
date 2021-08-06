@@ -1,0 +1,144 @@
+/*------------------ 
+    used fonts 
+------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+/* ------------------
+    common styles 
+---------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+/* ---------------------
+    header styles
+--------------------- */
+header {
+  height: 600px;
+  margin-bottom: 70px;
+  background-color: #2d25a0;
+}
+.header-part {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 110px 50px 100px;
+}
+.header-info {
+  margin: 35px 0 0 40px;
+  line-height: 85px;
+}
+.watch-button {
+  width: 168px;
+  height: 44px;
+  background-color: #e02c6d;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.fa-arrow-right {
+  color: #ffffff;
+}
+.header-image img {
+  width: 556px;
+  height: 438px;
+}
+.header-info h1 {
+  font-size: 50px;
+  color: #ffffff;
+}
+.watch-text {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/*-------------------
+    Players 
+ ---------------------*/
+.players {
+  display: flex;
+  justify-content: center;
+}
+.top-players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 28px;
+}
+.player {
+  width: 320px;
+  height: 470px;
+  padding: 15px;
+  padding-bottom: 20px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player p {
+  font-size: 16px;
+  color: #6c6c6c;
+}
+.player img {
+  width: 100%;
+}
+.paragraph-color {
+  color: aquamarine;
+}
+
+/* ----------------
+  all-highlights
+---------------------- */
+.all-highlights {
+  padding: 80px 120px 80px 120px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.highlights-info {
+  padding: 20px;
+}
+.highlights-info h1 {
+  font-size: 48px;
+}
+.highlights-info > p {
+  color: #6c6c6c;
+}
+.highlights-image {
+}
+.highlights-image img {
+  width: 450px;
+  height: 350px;
+}
+
+/* ----------------
+  footer
+---------------------- */
+.football-footer {
+  width: 483.87px;
+  height: 213px;
+  margin-left: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+footer img {
+  width: 483.87px;
+  height: 110px;
+}
+.footer-info {
+  margin-left: 200px;
+}
+.icons {
+  width: 140px;
+  margin-bottom: 20px;
+}
+.icons img {
+  width: 32px;
+  height: 32px;
+}
+.text {
+  margin-left: -30px;
+}
