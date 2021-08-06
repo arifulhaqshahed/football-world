@@ -12,6 +12,39 @@ body {
   font-family: Poppins;
 }
 
+/* ---------------
+  animation 1 
+------------------*/
+@keyframes changing-color {
+  50% {
+    background-color: rgb(189, 83, 189);
+  }
+  100% {
+    background-color: indianred;
+  }
+}
+/* ---------------
+  animation 2 
+------------------*/
+@keyframes shoot {
+  50% {
+    width: 610px;
+    height: 480px;
+  }
+  100% {
+    width: 556px;
+    height: 438px;
+  }
+}
+
+header:hover {
+  animation: changing-color 4s linear 1s infinite alternate forwards;
+}
+
+header:hover .shoot-football {
+  animation: shoot 4s linear infinite alternate forwards;
+}
+
 /* ---------------------
     header styles
 --------------------- */
@@ -42,7 +75,10 @@ header {
 .fa-arrow-right {
   color: #ffffff;
 }
-.header-image img {
+.header-image {
+  margin-left: 60px;
+}
+.shoot-football {
   width: 556px;
   height: 438px;
 }
@@ -64,8 +100,8 @@ header {
 }
 .top-players {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 30px;
+  grid-template-columns: repeat(3, 334px);
+  grid-column-gap: 35px;
   grid-row-gap: 28px;
 }
 .player {
@@ -105,8 +141,6 @@ header {
 .highlights-info > p {
   color: #6c6c6c;
 }
-.highlights-image {
-}
 .highlights-image img {
   width: 450px;
   height: 350px;
@@ -141,4 +175,76 @@ footer img {
 }
 .text {
   margin-left: -30px;
+}
+
+/* ----------------------
+  Responsiveness by media query 
+----------------------------*/
+@media only screen and (max-width: 688px) {
+  /* header part */
+  header:hover .shoot-football {
+    animation: none;
+  }
+  header {
+    width: 320px;
+    height: 695px;
+  }
+  .header-part {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .header-info {
+    width: 158px;
+    height: 50px;
+  }
+  .header-image {
+    margin-top: 300px;
+    margin-left: 10px;
+  }
+  .shoot-football {
+    width: 280px;
+    height: 259.17px;
+  }
+  .header-info h1 {
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  /* top players */
+  .top-players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player {
+    width: 230px;
+    height: 450px;
+    padding: 15px;
+    padding-bottom: 20px;
+  }
+
+  /* all highlights */
+  .all-highlights {
+    flex-direction: column;
+    margin-top: -40px;
+  }
+  .highlights-image img {
+    width: 250px;
+    height: 230px;
+  }
+
+  /* footer part */
+  .footer-image img {
+    width: 240px;
+    height: 70px;
+  }
+  .football-footer {
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+  .footer-info {
+    margin-left: 60px;
+  }
+  .text {
+    margin-left: -30px;
+  }
 }
